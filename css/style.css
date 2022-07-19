@@ -1,0 +1,96 @@
+* {
+    /* reset usado para zerar todas margens possíveis do conteúdo */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    /* nesta regra deixo as tags html e body com altura 100% deixando o background da página inteiro */
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    /* todo o texto da página ficará branco */
+    color: white;
+    /* configuração de cor pega na ferramenta no google "https://cssgradient.io/", o efeito degrade na cor */
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(19,35,124,1) 100%);
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    /* efeito da sombra com brilho */
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    /* fonte do goole */
+    font-family: 'Architects Daughter', cursive;
+    /* expessura da fonte */
+    font-weight: 100;
+    /* tamanho de font */
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+}    
+
+.profile {
+    margin-top: 20px;
+    /* centralizar o conteúdo dentro de <div class:" profile" */
+    text-align: center;
+}
+
+.social { /* usando flex box */
+    
+    /* deixo os itens da lista do index lado a lado */
+    display: flex;
+    /*  *justify-content: center; *
+    centraliza os elementos do display flex */
+    
+    /* centraliza os elementos criando espaços em volta de cada um */
+    justify-content: space-around; 
+    /* removendo os pontinhos de lista */
+    list-style: none;
+    margin: 20px 0;
+
+}
+
+/* configuro todas as imagens por igual usando essa tag */
+.social img {
+    width: 33px;
+}
+
+/* abaixo criando os botões */
+.links-list {
+    list-style: none;
+    
+}
+
+.links-list li {
+    margin: 10px 20px;
+}
+
+/* caminho até onde quero mexer que seria lá no index.html em ancora nos links */
+.links-list li a {
+    /* nesse código, faço com que a tag de links ou inline se transforme em bloco pois sem isso ela não tem margens e fica tudo juntos*/
+    display: block;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    /* remove a linha na escrita dos links */
+    text-decoration: none;
+    color: rgb(54,77,204);
+    font-weight: bold;
+}
+
+.links-list li a span {
+    color: grey;
+    display: block;
+    margin-top: 10px;
+}
